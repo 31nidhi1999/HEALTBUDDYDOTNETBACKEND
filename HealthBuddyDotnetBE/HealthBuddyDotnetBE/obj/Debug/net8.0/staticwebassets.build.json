@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Ll1reSCYb/uOx34vp8ptiC4I0L3LZI239F4fDTFtRtQ=",
+  "Source": "HealthBuddyDotnetBE",
+  "BasePath": "_content/HealthBuddyDotnetBE",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
