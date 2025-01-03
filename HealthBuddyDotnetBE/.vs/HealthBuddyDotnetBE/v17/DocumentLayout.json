@@ -11,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|solutionrelative:healthbuddydotnetbe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|c:\\dotnetbackend\\healthbuddydotnetbe\\healthbuddydotnetbe\\healthbuddydotnetbe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|solutionrelative:healthbuddydotnetbe\\healthbuddydotnetbe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|c:\\dotnetbackend\\healthbuddydotnetbe\\healthbuddydotnetbe\\contexts\\healhbuddycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|solutionrelative:healthbuddydotnetbe\\contexts\\healhbuddycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|c:\\dotnetbackend\\healthbuddydotnetbe\\healthbuddydotnetbe\\repositories\\declaration\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|solutionrelative:healthbuddydotnetbe\\repositories\\declaration\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|c:\\dotnetbackend\\healthbuddydotnetbe\\healthbuddydotnetbe\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|solutionrelative:healthbuddydotnetbe\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|c:\\dotnetbackend\\healthbuddydotnetbe\\healthbuddydotnetbe\\repositories\\implementation\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B548AA-38C8-4C55-B6D3-22DA151BDF48}|HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj|solutionrelative:healthbuddydotnetbe\\repositories\\implementation\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +34,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Program.cs",
-              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\Program.cs",
-              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Program.cs",
-              "RelativeToolTip": "HealthBuddyDotnetBE\\Program.cs",
+              "DocumentIndex": 3,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Repositories\\Declaration\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\Repositories\\Declaration\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Repositories\\Declaration\\IAppointmentRepository.cs",
+              "RelativeToolTip": "HealthBuddyDotnetBE\\Repositories\\Declaration\\IAppointmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T09:35:02.16Z",
+              "WhenOpened": "2025-01-03T10:38:50.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "HealthBuddyDotnetBE\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:38:44.628Z",
               "EditorCaption": ""
             },
             {
@@ -45,22 +70,49 @@
               "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\appsettings.json",
               "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\appsettings.json",
               "RelativeToolTip": "HealthBuddyDotnetBE\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-03T09:30:15.29Z",
+              "WhenOpened": "2025-01-03T10:03:09.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Program.cs",
+              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\Program.cs",
+              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Program.cs",
+              "RelativeToolTip": "HealthBuddyDotnetBE\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:02:20.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HealthBuddyDotnetBE.csproj",
-              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj",
-              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj",
-              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj",
-              "RelativeToolTip": "HealthBuddyDotnetBE\\HealthBuddyDotnetBE.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-03T09:22:52.238Z"
+              "Title": "HealhBuddyContext.cs",
+              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Contexts\\HealhBuddyContext.cs",
+              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\Contexts\\HealhBuddyContext.cs",
+              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Contexts\\HealhBuddyContext.cs",
+              "RelativeToolTip": "HealthBuddyDotnetBE\\Contexts\\HealhBuddyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:01:57.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Repositories\\Implementation\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "HealthBuddyDotnetBE\\Repositories\\Implementation\\DoctorRepository.cs",
+              "ToolTip": "C:\\DOTNETBACKEND\\HealthBuddyDotnetBE\\HealthBuddyDotnetBE\\Repositories\\Implementation\\DoctorRepository.cs",
+              "RelativeToolTip": "HealthBuddyDotnetBE\\Repositories\\Implementation\\DoctorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:00:56.701Z",
+              "EditorCaption": ""
             }
           ]
         }
