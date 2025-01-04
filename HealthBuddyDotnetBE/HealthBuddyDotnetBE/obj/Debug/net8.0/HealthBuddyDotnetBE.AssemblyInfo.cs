@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthBuddyDotnetBE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fea29162b0807a94dae432ee44400f6b5bda3baa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f940f16d6d53ffe89d300b88a49fefdf13f69abd")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthBuddyDotnetBE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthBuddyDotnetBE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

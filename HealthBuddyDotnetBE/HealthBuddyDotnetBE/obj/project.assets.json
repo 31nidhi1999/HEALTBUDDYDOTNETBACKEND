@@ -610,6 +610,19 @@
           }
         }
       },
+      "NodaTime/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/NodaTime.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NodaTime.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
         "type": "package",
         "dependencies": {
@@ -2146,6 +2159,27 @@
         "mysqlconnector.nuspec"
       ]
     },
+    "NodaTime/3.2.0": {
+      "sha512": "yoRA3jEJn8NM0/rQm78zuDNPA3DonNSZdsorMUj+dltc1D+/Lc5h9YXGqbEEZozMGr37lAoYkcSM/KjTVqD0ow==",
+      "type": "package",
+      "path": "nodatime/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/NodaTime.dll",
+        "lib/net6.0/NodaTime.pdb",
+        "lib/net6.0/NodaTime.xml",
+        "lib/net8.0/NodaTime.dll",
+        "lib/net8.0/NodaTime.pdb",
+        "lib/net8.0/NodaTime.xml",
+        "lib/netstandard2.0/NodaTime.dll",
+        "lib/netstandard2.0/NodaTime.pdb",
+        "lib/netstandard2.0/NodaTime.xml",
+        "nodatime.3.2.0.nupkg.sha512",
+        "nodatime.nuspec"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
       "sha512": "XjnlcxVBLnEMbyEc5cZzgZeDyLvAniACZQ04W1slWN0f4rmfNzl98gEMvHnFH0fMDF06z9MmgGi/Sr7hJ+BVnw==",
       "type": "package",
@@ -2582,6 +2616,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.11",
+      "NodaTime >= 3.2.0",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -2642,6 +2677,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.11, )"
+          },
+          "NodaTime": {
+            "target": "Package",
+            "version": "[3.2.0, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
