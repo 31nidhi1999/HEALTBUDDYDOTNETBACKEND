@@ -15,7 +15,7 @@ namespace HealthBuddyDotnetBE.Repositories.Implementation
 
         public void AddUser(User user)
         {
-            healhBuddyContext.Users.Add(user);
+            var user1=healhBuddyContext.Users.Add(user);
             healhBuddyContext.SaveChanges();
         }
 

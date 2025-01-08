@@ -23,7 +23,7 @@ namespace HealthBuddyDotnetBE.Entities
         //Many to Many relationship with Hospital.cs
         [ForeignKey("DoctorId")]
         [InverseProperty("Doctors")]
-        public ISet<Hospital> Hospitals { get; set; }
+        public List<Hospital> Hospitals { get; set; }
 
         [ForeignKey("DoctorId")]
         [InverseProperty("Doctor")]

@@ -15,7 +15,7 @@ namespace Health.Entity
         public bool IsActive { get; set; } = true;
 
         [InverseProperty("Hospitals")]
-        public ISet<Doctor> Doctors { get; set; }
+        public List<Doctor> Doctors { get; set; }
 
 
         

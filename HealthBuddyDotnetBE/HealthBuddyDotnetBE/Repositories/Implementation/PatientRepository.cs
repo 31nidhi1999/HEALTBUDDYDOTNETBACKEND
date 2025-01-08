@@ -13,10 +13,11 @@ namespace HealthBuddyDotnetBE.Repositories.Implementation
             this.healhBuddyContext = healhBuddyContext;
         }
 
-        public void AddPatient(Patient patient)
+        public long AddPatient(Patient patient)
         {
             healhBuddyContext.Patients.Add(patient);
             healhBuddyContext.SaveChanges();
+            return patient.Id;
         }
 
         public void UpdatePatient(Patient patient)

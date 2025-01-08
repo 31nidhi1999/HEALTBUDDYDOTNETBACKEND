@@ -1,17 +1,19 @@
 ﻿using HealthBuddyDotnetBE.Entities;
+using HealthBuddyDotnetBE.ResponseDto;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace HealthBuddyDotnetBE.Repositories.Declaration
 {
     public interface IDoctorRepository
     {
-        void AddDoctor(Doctor doctor);
-        void DeleteDoctor(long doctId);
+        long AddDoctor(Doctor doctor);
+        //ApiResponse DeleteDoctor(long doctId);
         void UpdateDoctor(Doctor doctor);
         Doctor GetDoctorById(long doctId);
         List<Doctor> GetAllDoctors();
 
         Doctor GetDoctorByEmail(string email);
 
-        ISet<Doctor> GetDoctorsByHospitalId(long hospId);
+        List<Doctor> GetDoctorsByHospitalId(long hospId);
     }
 }

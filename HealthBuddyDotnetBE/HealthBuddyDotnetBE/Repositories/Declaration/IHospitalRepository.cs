@@ -4,10 +4,10 @@ namespace HealthBuddyDotnetBE.Repositories.Declaration
 {
     public interface IHospitalRepository
     {
-        void AddHospital();
-        void UpdateHospital();
-        void DeleteHospital();
-        Hospital GetHospitalById();
+        long AddHospital(Hospital hospital);
+        void UpdateHospital(Hospital hospital);
+        void DeleteHospital(long HospId);
+        Hospital GetHospitalById(long HospId);
         List<Hospital> GetAllHospitals();
 
     

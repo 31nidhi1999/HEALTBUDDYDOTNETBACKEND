@@ -22,10 +22,17 @@ namespace HealthBuddyDotnetBE.Contexts
 
         protected  void onModelCreating(ModelBuilder modelBuilder)
         {
-           modelBuilder.Entity<Appointment>()
-                .HasOne(a => a.Doctor)
-                .WithMany(d => d.Appointments)
-                .HasForeignKey(a => a.DoctorId);
+
+            modelBuilder.Entity<Appointment>()
+                .Property(a => a.Status)
+                .HasConversion<string>()
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<Appointment>()
+                 .HasOne(a => a.Doctor)
+                 .WithMany(d => d.Appointments)
+                 .HasForeignKey(a => a.DoctorId);
+                
             modelBuilder.Entity<Appointment>()
                 .HasOne(a => a.Hospital)
                 .WithMany()
@@ -42,7 +49,10 @@ namespace HealthBuddyDotnetBE.Contexts
             modelBuilder.Entity<Doctor>()
                 .HasOne(d => d.User)
                 .WithOne()
-                .HasForeignKey<Doctor>(d => d.UserId);
+                .HasForeignKey<Doctor>(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+        
 
             modelBuilder.Entity<Doctor>()
                 .HasMany(d => d.Hospitals)

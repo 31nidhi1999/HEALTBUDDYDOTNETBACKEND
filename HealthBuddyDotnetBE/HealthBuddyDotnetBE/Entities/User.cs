@@ -6,8 +6,11 @@ namespace HealthBuddyDotnetBE.Entities
     [Table("users")]
     public class User : BaseEntity
     {
+
+       
         [Required]
         [StringLength(100)]
+
         public string UserName { get; set; }
 
         [Required]
@@ -17,5 +20,16 @@ namespace HealthBuddyDotnetBE.Entities
         public UserRole Role { get; set; }
 
         public bool IsActive { get; set; } = true;
+
+        public User() { }
+
+        public User(string userName, string password, UserRole role, bool isActive)
+        {
+            UserName = userName;
+            Password = password;
+            Role = role;
+            IsActive = isActive;
+        }
+
     }
 }

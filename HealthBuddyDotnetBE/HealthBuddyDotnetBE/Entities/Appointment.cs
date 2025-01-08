@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using HealthBuddyDotnetBE.Entities;
 using Microsoft.EntityFrameworkCore;
-using NodaTime;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
 
 namespace Health.Entity
 {
@@ -11,9 +12,9 @@ namespace Health.Entity
     {
         public DateTime AppointmentDate { get; set; }
 
-        [EnumDataType(typeof(AppointmentStatus))]
-        [MaxLength(50)]
+        [EnumDataType(typeof(AppointmentStatus))][MaxLength(50)] 
         public AppointmentStatus Status { get; set; }
+        public string StatusString => Status.ToString();
 
         //many to one relationship with Doctor
         [ForeignKey("Doctor")]

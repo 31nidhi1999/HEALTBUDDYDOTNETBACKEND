@@ -1,3 +1,5 @@
+using HealthBuddyDotnetBE.Entities;
+using HealthBuddyDotnetBE.Repositories.Declaration;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthBuddyDotnetBE.Controllers
@@ -5,7 +7,17 @@ namespace HealthBuddyDotnetBE.Controllers
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
+
     {
+
+        private readonly IDoctorRepository doctorRepository;
+
+        public WeatherForecastController(IDoctorRepository doctorRepository)
+        {
+            this.doctorRepository = doctorRepository;
+        }
+       
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

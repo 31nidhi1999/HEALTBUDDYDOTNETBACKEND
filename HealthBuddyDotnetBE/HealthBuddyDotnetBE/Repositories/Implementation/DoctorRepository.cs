@@ -2,7 +2,9 @@
 using HealthBuddyDotnetBE.Contexts;
 using HealthBuddyDotnetBE.Entities;
 using HealthBuddyDotnetBE.Repositories.Declaration;
+using HealthBuddyDotnetBE.ResponseDto;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace HealthBuddyDotnetBE.Repositories.Implementation
 {
@@ -19,17 +21,19 @@ namespace HealthBuddyDotnetBE.Repositories.Implementation
 
         }
 
-    public void AddDoctor(Doctor doctor)
+    public long AddDoctor(Doctor doctormodel)
         {
-            healhBuddyContext.Doctors.Add(doctor);
+          healhBuddyContext.Doctors.Add(doctormodel);
             healhBuddyContext.SaveChanges();
+            return doctormodel.Id;
+           
         }
 
-        public void DeleteDoctor(long doctId)
+        /*public ApiResponse DeleteDoctor(long doctId)
         {
             healhBuddyContext.Doctors.Remove(healhBuddyContext.Doctors.Find(doctId));
             healhBuddyContext.SaveChanges();
-        }
+        }*/
 
         public void UpdateDoctor(Doctor doctor)
         {
@@ -45,6 +49,7 @@ namespace HealthBuddyDotnetBE.Repositories.Implementation
         
         public List<Doctor> GetAllDoctors()
         {
+            healhBuddyContext.Doctors.Include(d => d.User);
             return healhBuddyContext.Doctors.ToList();
         }
 
@@ -56,14 +61,14 @@ namespace HealthBuddyDotnetBE.Repositories.Implementation
   
 
 
-        public ISet<Doctor> GetDoctorsByHospitalId(long hospId)
+        public List<Doctor> GetDoctorsByHospitalId(long hospId)
         {
             return healhBuddyContext.Hospitals
                 .Where(h => h.Id == hospId)
                 .SelectMany(h => h.Doctors)
-                .ToHashSet();
+            .ToList();
         }
 
-
+        //public IQueryable<Doctor> GetAllDoctors() { return healhBuddyContext.Doctors.Include(d => d.User); }
     }
 }

@@ -4,10 +4,10 @@ namespace HealthBuddyDotnetBE.Repositories.Declaration
 {
     public interface IPatientRepository
     {
-        void AddPatient();
-        void UpdatePatient();
-        void DeletePatient();
-        Patient GetPatientById();
+        long AddPatient(Patient patient);
+        void UpdatePatient(Patient patient);
+        void DeletePatient(long id);
+        Patient GetPatientById(long patientId);
         List<Patient> GetAllPatients();
 
         Patient GetPatientByEmail(string email);
